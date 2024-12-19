@@ -57,7 +57,7 @@ pub trait LinearSort<T> {
     ///
     /// See [`sort_unstable_by`].
     ///
-    /// [`sort_by`]: https://doc.rust-lang.org/std/primitive.slice.html#method.sort_unstable_by
+    /// [`sort_unstable_by`]: https://doc.rust-lang.org/std/primitive.slice.html#method.sort_unstable_by
     fn linear_sort_unstable_by<F>(&mut self, compare: F)
     where
         F: FnMut(&T, &T) -> cmp::Ordering;
@@ -66,7 +66,7 @@ pub trait LinearSort<T> {
     ///
     /// See [`sort_by_key`].
     ///
-    /// [`sort_by`]: https://doc.rust-lang.org/std/primitive.slice.html#method.sort_by_key
+    /// [`sort_by_key`]: https://doc.rust-lang.org/std/primitive.slice.html#method.sort_by_key
     fn linear_sort_by_key<K, F>(&mut self, f: F)
     where
         F: FnMut(&T) -> K,
@@ -78,7 +78,7 @@ pub trait LinearSort<T> {
     ///
     /// See [`sort_by_cached_key`].
     ///
-    /// [`sort_by`]: https://doc.rust-lang.org/std/primitive.slice.html#method.sort_by_cached_key
+    /// [`sort_by_cached_key`]: https://doc.rust-lang.org/std/primitive.slice.html#method.sort_by_cached_key
     fn linear_sort_by_cached_key<K, F>(&mut self, f: F)
     where
         F: FnMut(&T) -> K,
@@ -88,7 +88,7 @@ pub trait LinearSort<T> {
     ///
     /// See [`sort_unstable_by_key`].
     ///
-    /// [`sort_by`]: https://doc.rust-lang.org/std/primitive.slice.html#method.sort_unstable_by_key
+    /// [`sort_unstable_by_key`]: https://doc.rust-lang.org/std/primitive.slice.html#method.sort_unstable_by_key
     fn linear_sort_unstable_by_key<K, F>(&mut self, f: F)
     where
         F: FnMut(&T) -> K,
